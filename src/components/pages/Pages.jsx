@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes,Switch,Link } from 'react-router-dom';
-import Header from '../common/header';
-  
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "../common/Header";
+import Home from "../home/Home";
+
 function Pages() {
   return (
     <Router>
       <Header />
-      <Switch>
+      <Routes>
         <Route path="/" element={<Home />} />
-       </Switch>
+      </Routes>
     </Router>
   );
 }
